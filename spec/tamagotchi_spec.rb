@@ -12,4 +12,24 @@ describe(Tamagotchi) do
     end
   end
 
+  describe('#feed') do
+    it("increases the hunger level by 10") do
+      my_pet = Tamagotchi.new("Pikachu")
+      expect(my_pet.feed()).to(eq(110))
+    end
+  end
+
+  describe('#play') do
+    it("increases the fun level by 10") do
+      my_pet = Tamagotchi.new("Pikachu")
+      expect(my_pet.play()).to(eq(110))
+    end
+  end
+
+  describe('#nap') do
+    it("increases the sleep level by 10") do
+      my_pet = Tamagotchi.new("Pikachu")
+      expect(my_pet.nap()).to(eq(110))
+    end
+  end
 end
