@@ -1,0 +1,15 @@
+<h1>Welcome to the Tamagotchi Game!</h1>
+<form action="/name">
+  <div class="form-group">
+    <label for="name">Name your pet:</label>
+    <input id="name" name="name" type="text">
+  </div></form>
+
+  <ul>Stats
+    <li><%= @hunger %>
+    <li><%= @fun %>
+    <li><%= @sleep %>
+
+  <button type="submit" class="btn-success">Feed</button>
+  <button type="submit" class="btn-success">Play</button>
+  <button type="submit" class="btn-success">Nap</button>

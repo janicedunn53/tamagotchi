@@ -32,4 +32,13 @@ describe(Tamagotchi) do
       expect(my_pet.nap()).to(eq(110))
     end
   end
+
+  # describe("#time_passes") do
+  #   it("decreases the hunger level by 10") do
+  #     my_pet = Tamagotchi.new("Pikachu")
+  #     my_pet.time_passes()
+  #     expect(my_pet.hunger_level()).to(eq(90))
+  #   end
+  # end
+
 end

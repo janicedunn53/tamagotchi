@@ -1,4 +1,5 @@
 class Tamagotchi
+  @@all_stats = []
 
   define_method(:initialize) do |name|
     @name = name
@@ -7,9 +8,9 @@ class Tamagotchi
     @sleep = 100
   end
 
-  # define_singleton_method(:levels) do
-  #   @@levels
-  # end
+  define_singleton_method(:all) do
+    @@all_stats
+  end
 
   define_method(:name) do
     @name
@@ -38,5 +39,9 @@ class Tamagotchi
   define_method(:nap) do
     @sleep + 10
   end
+
+  # define_method(:time_passes) do
+  #   @hunger - 10
+  # end
 
 end
